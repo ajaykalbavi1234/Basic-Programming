@@ -30,3 +30,12 @@ def Factorial_new(n):
     else:
         return 1
 print(Factorial_new(int(input())))
+
+# A simple program to get the current date in yymmdd format
+import datetime as DT
+d1 = DT.datetime.now().strftime('%y-%m-%d').replace('-','')
+d1
+
+# An extension of the above program to get the difference in dates
+diff = (DT.datetime.now() - DT.timedelta(2))
+print(diff)
