@@ -37,5 +37,9 @@ d1 = DT.datetime.now().strftime('%y-%m-%d').replace('-','')
 d1
 
 # An extension of the above program to get the difference in dates
-diff = (DT.datetime.now() - DT.timedelta(2))
-print(diff)
+d2 = (DT.datetime.now().day)
+d3 = (DT.datetime.now().day-DT.timedelta(2).days)
+print(d2-d3)
+
+#An additional extension where the above program is shown difference in seconds
+print(DT.datetime.now().second-DT.timedelta(5).seconds)
